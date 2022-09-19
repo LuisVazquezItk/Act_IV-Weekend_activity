@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/960d921736.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            display: flex;
+            background-color: #e3e7eb;
+        }
+        div{
+            display: flex;
+            height: 864px;
+            width: 1296px;
+            
+            margin-top: 69px;
+            margin-left: 74px;
+        }
+        .sideL{
+            flex-grow: 1;
+            background-color: white;
+            display:flex;
+            min-width: 648px;
+            max-width: 648px;
+        }
+        .sideR{
+            flex-grow: 1;
+            background-color: black;
+            background-image: url('background_take4.jpg');
+            background-repeat: no-repeat;
+            min-width: 648px;
+            display: flex;
+        }
+        form{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            color: #787a80;
+        }
+        h1, short>strong{
+            color: black;
+        } 
+        little{
+            width: 100%;
+            font-size: 85%;
+            color: #a9a9ac;
+        }
+        label{
+            font-weight: bold;
+        }
+        .checkboxarea{
+            font-size: 90%;
+        }
+        article, button, input:not(.thecheckbox){
+            width: 350px;
+        }
+        footer{
+            margin: auto;
+        }
+        .fa-google {
+            background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+        .toright{
+            float: right;
+        }
+        .btn-outline-secondary{
+            border-color: #eeeeee;
+            border-width: 3px;
+        }
+        .info{
+            backdrop-filter: blur(5px);
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            height: 317px;
+            width: 577px;
+            border-width: 1px;
+            border-color: rgb(193, 193, 214);
+            margin: auto;
+            margin-bottom: 5%;
+            display:flex;
+            flex-direction: column;
+        }
+        div>h2{
+            margin-top: 5%;
+            margin-left: 3.5%;
+        }
+        footer{
+            display: flex;
+        }
+        footer>article{
+            margin-bottom: 5%;
+            margin-left: 3.5%;
+            text-align: left;
+        }
+        h6:last-of-type{
+            color: transparent;
+            text-shadow: 0px 0px 2px #a9a9ac;
+        }
+        span{
+            display: block;
+            margin-bottom: 1.5em;
+        }
+        .separation{
+            display: block;
+            margin-bottom: 1.5em;
+        }
+        footer article:last-child{
+            margin-bottom: 5%;
+            margin-right: 3.5%;
+            text-align: center;
+        }
+        article>h2{
+            color: white;
+        }
+        article>stars{
+            margin-right: 10%;
+        }
+        arrows{
+            margin-right: 15%;
+            margin-top: 400px !important;
+            font-size: 50px;
+        }
+        .bi-arrow-left-circle{
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbody">
+        <section class="sideL">
+            <form action="submit">
+                <hgroup>
+                    <h1>Welcome back</h1>
+                    <h5><little>Welcome back! Please enter your details.</little></h5>
+                </hgroup>
+                <br>
+                <article>
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                    
+                </article>
+                <br>
+                <article>
+                    <label for="pass"><strong>Password</strong></label>
+                    <input type="password" class="form-control" name="pass" placeholder="●●●●●●●●">
+                </article>   
+                <br>
+                <article class="checkboxarea">
+                    <input type="checkbox" name="checkbox" class="thecheckbox">
+                    <label for="checkbox" class="forcheckbox"><strong>Remember for 30 days</strong></label>
+                    
+                    <short class="toright"><strong>Forgot password</strong></short>
+                </article>
+                <br>
+                <article>
+                    <button class="btn btn-dark btn-primary btn-lg btn-block">Sign in</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-outline-secondary btn-lg btn-block"><i class="fa-brands fa-google"></i><strong>  Sign in with Google</strong></button>
+                    
+                </article>
+                <br> 
+                <footer>
+                    <short>Don't have an account? <strong>Sign up for free</strong></short>
+                </footer>
+            </form>
+        </section>
+        <section class="sideR">
+            <div class="info">
+                <h2>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt".
+                </h2>
+                <br>
+                <footer>
+                    <article>
+                        <h2>
+                            Andi Lane
+                        </h2>
+                        <span class="separation"></span>
+                        <h6>
+                            Founder, Catalog
+                        </h6>
+                        <h6>
+                            Web Design Agency
+                        </h6>
+                    </article>
+                    <article>
+                        <stars>
+                            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i>
+                        </stars>
+                        <span></span>
+                        <arrows>
+                            <i class="bi bi-arrow-left-circle arrow"></i>   <i class="bi bi-arrow-right-circle arrow"></i>
+                        </arrows>
+                    </article>
+                </footer>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
